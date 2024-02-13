@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.084" />
+
+    <TextView
+        android:id="@+id/gradosCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="148dp"
+        android:text="C°"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etC"
+        android:layout_width="205dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintStart_toEndOf="@+id/gradosCelcius"
+        app:layout_constraintTop_toBottomOf="@+id/titleMain" />
+
+    <TextView
+        android:id="@+id/gradosFarenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="45dp"
+        android:text="F°"
+        android:textSize="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradosCelcius" />
+
+    <EditText
+        android:id="@+id/etF"
+        android:layout_width="208dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/gradosFarenheit"
+        app:layout_constraintTop_toBottomOf="@+id/etC" />
+
+    <Button
+        android:id="@+id/btnGC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="67dp"
+        android:backgroundTint="@color/black"
+        android:text="°C"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etF" />
+
+    <Button
+        android:id="@+id/btnGF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="67dp"
+        android:layout_marginEnd="80dp"
+        android:backgroundTint="@color/black"
+        android:text="°F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etF" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
